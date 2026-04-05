@@ -489,7 +489,7 @@ button {
 
 .footer-social-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
   margin-top: 16px;
 }
@@ -516,8 +516,4 @@ button {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
-}
-
-.team-social-link svg {
-  fill: #f4f4fd;
 }
