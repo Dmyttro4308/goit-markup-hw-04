@@ -118,22 +118,10 @@ button {
   display: block;
   padding: 24px 0;
   position: relative;
-  position: relative;
-  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.line {
-  position: relative;
-  display: inline-block;
-}
-
-.line::after {
-}
-
-.header-link:hover::after,
-.header-link:focus::after,
-.header-link.active::after {
+.header-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -146,7 +134,18 @@ button {
   background-color: #404bbf;
 
   opacity: 0;
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover::after,
+.header-link:focus::after,
+.header-link.active::after {
+  opacity: 1;
+}
+
+.header-link.active {
+  color: #404bbf;
 }
 
 .header-link:hover,
